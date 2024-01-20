@@ -1,0 +1,20 @@
+{
+  "name": "wp-crawler",
+  "version": "1.0.0",
+  "description": "Wordpress Crawler",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "json2csv": "^6.0.0-alpha.2",
+    "request": "^2.88.2"
+  }
+}
