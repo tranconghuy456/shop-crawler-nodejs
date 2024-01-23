@@ -1,0 +1,50 @@
+import * as fs from "fs";
+import * as cheerio from "cheerio";
+import axios from "axios";
+
+const categories = [];
+
+const getCategoryLink = async ({
+  elements: {
+    category_list_element,
+    category_item_parent,
+    category_item_child,
+  },
+  url,
+}) => {
+  try {
+    // request
+    const { data, status } = await axios.get(url);
+
+    // if data is null
+    if (!data || status !== 200) throw status;
+
+    // cheerio
+    const $ = cheerio.load(data);
+
+    console.log($(".home-product-type-group").html());
+
+    console.log($(category_item_parent).toArray());
+    var categoryList = $(category_list_element);
+    var categoryItems = $($(categoryList))
+      .find($($(category_item_parent)))
+      .toArray();
+
+    console.log();
+
+    for (let category of categoryItems) {
+      console.log(category);
+    }
+  } catch (error) {
+    throw error;
+  }
+};
+
+getCategoryLink({
+  elements: {
+    category_list_element: ".owl-stage",
+    category_item_parent: ".owl-item",
+    category_item_child: ".item a",
+  },
+  url: "https://demxanh.com/",
+});

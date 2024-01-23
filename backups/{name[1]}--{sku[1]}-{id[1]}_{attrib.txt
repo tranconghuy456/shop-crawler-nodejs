@@ -1,0 +1,38 @@
+{name[1]}--{sku[1]}-{id[1]}_{attribute_1_values[1]}-{attribute_2_values[1]}-{attribute_3_values[1]}
+
+- Nệm
+-- Nệm cao su
+--- Nệm cao su Segovia
+--- Nệm cao su Green Sleep gấp 3
+--- Nệm cao su Unique
+-- Nệm lò xo
+--- Nệm lò xo Ruby
+--- Nệm lò xo Comfy gấp 2/gấp 3
+--- Nệm lò xo Perfect
+--- Nệm lò xo Harmony
+--- Nệm lò xo Diamond
+-- Nệm mousse
+--- Nệm mousse Queen Foam 5N – Vải Cotton
+--- Nệm mousse Queen Foam 5N – Vải Tricat
+--- Nệm mousse Queen Foam 10N
+-- Nệm gòn ép
+--- Nệm gòn Fantasy thẳng – vải Tricat
+--- Nệm gòn Fantasy thẳng – vải Cotton
+--- Nệm gòn Fantasy gấp 3 – vải Tricat
+--- Nệm gòn ép Fantasy gấp 3 – vải Cotton
+--- Nệm gòn Fantasy gấp 3 – vải Gấm
+-- Nệm gấp đa tầng
+--- Nệm cao su gòn ép Ultra Care gấp (1C2G)
+--- Nệm cao su mousse ép Venus gấp – Vải gấm
+--- Nệm cao su gòn ép Ultra Care gấp (3C7G)
+--- Nệm cao su mousse ép Venus gấp – Vải cotton
+--- Nệm cao su gòn ép Ultra Care thẳng (3C7G)
+
+- Gối
+-- Gối gòn
+
+
+- Dây thun
+-- Dây thun ∅12 – 1,4 li
+-- Dây thun ∅16 – 1,4 li
+-- Dây thun trắng ∅25 – 1,4 li

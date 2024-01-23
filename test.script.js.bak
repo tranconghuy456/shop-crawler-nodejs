@@ -1,0 +1,81 @@
+import * as fs from "fs";
+import * as cheerio from "cheerio";
+import axios from "axios";
+import * as ENV from "./configs/root.js";
+
+// async function getProductByCategory(url) {
+//   try {
+//     const { data, status } = await axios.get(url);
+
+//     if (!data || status !== 200) throw status;
+
+//     const $ = cheerio.load(data);
+//     var payload = {};
+
+//     // get product container
+//     const container = $("section.product-page");
+//     var productContainer = container.find(".p-container .p-item").toArray();
+
+//     for (var [index, product] of productContainer.entries()) {
+//       var href =
+//         `${baseURL}/${$(product).find("a.p-img").attr("href")}` || false;
+
+//       const { data, status } = await axios.get(href ?? href);
+//       if (!data || status !== 200) throw status;
+
+//       const $product = cheerio.load(data);
+
+//       // get attributes
+//       var attributes = $product(".blog-middle").html();
+//       console.log(attributes);
+
+//       payload = {
+//         id: index,
+//         type: "variation",
+//         name:
+//           $product(".blog-middle").find("h1").text().trim() || "Đang cập nhật",
+//         sku:
+//           //   `#${
+//           //     $product(".blog-middle").find("div > a").text().trim() || "PRODUCT"
+//           //   }` || "#PRODUCT",
+//           "#Everon",
+//         breadcrumb:
+//           $(container)
+//             .find(".global-breadcrumb")
+//             .text()
+//             .replace(/\s{2,}/g, "/")
+//             .trim() || "UPDATING", // get breadcrumb,
+//         description:
+//           $product(".product-info-group .pro-desc-group").html() ||
+//           "Không có mô tả nào.",
+//         regular_price:
+//           $product(".blog-middle #js-config-price").text().trim() || "Liên hệ",
+//         grouped_products: "#Everon",
+//         images: `${baseURL}/${
+//           $product(".product-detail-group a[data-fancybox='gallery']")
+//             .toArray()
+//             .map((img) => {
+//               return $(img).attr("href");
+//             })
+//             .toString() || "Đang cập nhật"
+//         }`,
+//       };
+
+//       products.push(payload);
+//     }
+
+//     return products;
+
+//     // get product info
+//   } catch (error) {
+//     throw error;
+//   }
+// }
+
+// getProductByCategory("https://demxanh.com/dem-bong-ep-everon.html").then(
+//   (data) => {
+//     // console.log(data);
+//   }
+// );
+
+// 
